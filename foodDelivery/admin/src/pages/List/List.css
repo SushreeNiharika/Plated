@@ -1,0 +1,45 @@
+h2 {
+  font-size: 3.5vw;
+  color: rgb(91, 7, 7);
+  margin-left: 38%;
+}
+.list p {
+  font-size: 1.2vw;
+}
+.list-table-format {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 1px solid #cacaca;
+  font-size: 13px;
+}
+.list-table-format.title {
+  background-color: #bba3a3;
+  font-size: 2vw;
+  color: rgb(154, 6, 6);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.list-table-format img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .list-table-format img {
+    width: 100%;
+
+    object-fit: contain;
+  }
+  .list-table-format.title {
+    font-size: 2.5vw;
+  }
+  .list p {
+    font-size: 2vw;
+  }
+}
