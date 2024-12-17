@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-
-export default defineConfig({
-  base: "/", // For root deployment, use '/' (if it's deployed at a subpath, replace with '/myapp/')
-  plugins: [react()],
-});
+// vite.config.js
+export default {
+  base: "/platted-fe/", // This is the base path where your site will be hosted
+  build: {
+    outDir: "dist", // Vite output folder
+  },
+};
