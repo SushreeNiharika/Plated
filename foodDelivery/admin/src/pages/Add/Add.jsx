@@ -5,7 +5,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Add = () => {
-  const url = "http://localhost:4000";
+  //const url = "http://localhost:4000";
+   = "https://platted-backend-up.onrender.com";
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
