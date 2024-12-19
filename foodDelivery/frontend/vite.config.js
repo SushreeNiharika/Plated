@@ -1,7 +1,11 @@
-// vite.config.js
-export default {
-  base: "/", // Host the site at the root
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  base: "/", // Adjust your base path if needed
   build: {
-    outDir: "dist", // Vite output folder
+    outDir: "dist",
   },
-};
+});
+
