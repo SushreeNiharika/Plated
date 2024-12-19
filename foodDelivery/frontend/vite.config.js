@@ -1,6 +1,6 @@
 // vite.config.js
 export default {
-  base: "/platted-fe/", // This is the base path where your site will be hosted
+  base: "/", // Host the site at the root
   build: {
     outDir: "dist", // Vite output folder
   },
