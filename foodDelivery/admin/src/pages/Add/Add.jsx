@@ -11,7 +11,7 @@ const Add = () => {
     name: "",
     description: "",
     price: "",
-    category: "Salad",
+    category: "",
   });
 
   const onChangeHandler = (event) => {
@@ -38,7 +38,7 @@ const Add = () => {
         name: "",
         description: "",
         price: "",
-        category: "Salad",
+        category: "",
       });
       setImage(false);
       toast.success(response.data.message);
@@ -115,13 +115,7 @@ const Add = () => {
           </div>
         </div>
 
-        <button
-          type="submit"
-          className="add-btn"
-          onClick={() => {
-            window.location.reload();
-          }}
-        >
+        <button type="submit" className="add-btn">
           {" "}
           ADD
         </button>
