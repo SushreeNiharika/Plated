@@ -6,7 +6,6 @@ const orderSchema = new mongoose.Schema({
   amount: { type: Number, required: true },
   address: { type: Object, required: true, default: "Unknown Address" },
   //address: { type: String, required: true, default: "Unknown Address" },
-
   status: { type: String, default: "Food Processing" },
   date: { type: Date, default: Date.now() },
   payment: { type: Boolean, default: false },
